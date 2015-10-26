@@ -37,11 +37,12 @@ operators(document.getElementById('minus'));
 operators(document.getElementById('divide'));
 operators(document.getElementById('multiply'));
 
-
+/// getting total screen to accept empty value //
   document.getElementById('clear').addEventListener('click', function(){
   document.getElementById('total').value = "";
   });
 
+// looking for operator and second number //
 
 document.getElementById('equals').addEventListener('click', function(){
   number2 = Number(document.getElementById('total').value);
@@ -53,6 +54,8 @@ document.getElementById('equals').addEventListener('click', function(){
     answer = number1 / number2;
     else if (operator === '*')
     answer = number1 * number2;
+
+// printing answer in total screen
 
   document.getElementById('total').value=answer;
 })

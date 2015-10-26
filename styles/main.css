@@ -30,7 +30,7 @@ main {
   margin-right: 2.35765%;
   width: 31.76157%;
   background-color: #66AF59;
-  height: 400px; }
+  height: 350px; }
   #calculator:last-child {
     margin-right: 0; }
   #calculator input {
@@ -44,7 +44,9 @@ main {
   appearance: none;
   box-shadow: none;
   border-radius: none;
-  width: 74%; }
+  border: none;
+  width: 74%;
+  margin: 0 0; }
 
 #clear {
   height: 70px;
@@ -55,12 +57,35 @@ main {
   border-radius: none;
   width: 25%; }
 
+#operators input {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  margin-right: 0;
+  height: 70px;
+  display: block;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  width: 25%;
+  float: right; }
+  #operators input:last-child {
+    margin-right: 0; }
+
 #numbers input {
+  float: left;
+  display: block;
+  margin-right: 7.42297%;
+  width: 73.14426%;
   height: 70px;
   width: 25%;
   appearance: none;
   box-shadow: none;
-  border-radius: none; }
+  border-radius: none;
+  margin-right: 0; }
+  #numbers input:last-child {
+    margin-right: 0; }
 
 #equals {
   float: left;
@@ -74,15 +99,6 @@ main {
   appearance: none;
   box-shadow: none;
   border-radius: none;
-  width: 49%; }
+  width: 25%; }
   #equals:last-child {
     margin-right: 0; }
-
-#operators input {
-  height: 70px;
-  float: right;
-  display: block;
-  appearance: none;
-  box-shadow: none;
-  border-radius: none;
-  width: 25%; }
