@@ -50,6 +50,7 @@ main {
   .top:last-child {
     margin-right: 0; }
   .top input {
+    -webkit-appearance: none;
     background: #6A74A2;
     border: none;
     border-left: 1px solid;
@@ -77,6 +78,7 @@ main {
   #row1:last-child {
     margin-right: 0; }
   #row1 input {
+    -webkit-appearance: none;
     font-size: 52px;
     padding: 25px 0;
     background: rgba(106, 116, 162, 0.9);
@@ -99,6 +101,7 @@ main {
   #row2:last-child {
     margin-right: 0; }
   #row2 input {
+    -webkit-appearance: none;
     font-size: 52px;
     padding: 25px 0;
     background: rgba(106, 116, 162, 0.9);
@@ -121,6 +124,7 @@ main {
   #row3:last-child {
     margin-right: 0; }
   #row3 input {
+    -webkit-appearance: none;
     font-size: 52px;
     padding: 25px 0;
     background: rgba(106, 116, 162, 0.9);
@@ -143,6 +147,7 @@ main {
   #row4:last-child {
     margin-right: 0; }
   #row4 input {
+    -webkit-appearance: none;
     font-size: 52px;
     padding: 25px 0;
     background: rgba(106, 116, 162, 0.9);
