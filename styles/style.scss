@@ -35,6 +35,9 @@ $tablet: new-breakpoint(max-width 768px);
     @include shift(3);
     border: 20px solid rgba(28, 37, 83, .85);
     height: auto;
+    #total {
+      color: #fff;
+    }
   }
 
   .top {
@@ -47,6 +50,7 @@ $tablet: new-breakpoint(max-width 768px);
       border-right: 1px solid;
       height: 59px;
       width: 100.55%;
+      color: #fff;
       /* margin-left: 0; */
       /* margin-right: 0px; */
       /* padding: 0px 0px; */
@@ -56,6 +60,7 @@ $tablet: new-breakpoint(max-width 768px);
       transition: all ease 0.5s;
     }
     #total {
+      color: #fff;
       background: rgba(180, 94, 84, .6);
       width: 100.5%;
       padding: 30px;
@@ -81,7 +86,7 @@ $tablet: new-breakpoint(max-width 768px);
       background: white;
       transition: all ease 0.5s;
     }
-    #seven, #nine {
+    #seven, #eight, #nine {
       border-right: none;
     }
   }
@@ -103,7 +108,7 @@ $tablet: new-breakpoint(max-width 768px);
       background: white;
       transition: all ease 0.5s;
     }
-    #four, #six {
+    #four, #five, #six {
       border-right: none;
     }
   }
@@ -125,7 +130,7 @@ $tablet: new-breakpoint(max-width 768px);
       background: white;
       transition: all ease 0.5s;
     }
-    #one, #three {
+    #one, #two, #three {
       border-right: none;
     }
   }
@@ -146,7 +151,7 @@ $tablet: new-breakpoint(max-width 768px);
       background: white;
       transition: all ease 0.5s;
     }
-    #zero, #equals {
+    #zero, #dec, #equals {
       border-right: none;
     }
   }
