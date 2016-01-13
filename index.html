@@ -2,46 +2,52 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=320, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" media="screen" charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Monofett' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="styles/main.css" media="screen" charset="utf-8">
     <title>Calculadora</title>
   </head>
   <body>
-
     <main>
 
       <div id="calculator">
+        <div class="extraBorder">
 
         <div class="top">
           <input id="total" type="text" name="name" value="" disabled></input>
           <input id="clear" type="button" name="clear" value="C"></input>
         </div>
 
-        <div id="operators">
+        <div id="row1">
+          <input id="seven" type="button" name="seven" value="7"></input>
+          <input id="eight" type="button" name="eight" value="8"></input>
+          <input id="nine" type="button" name="nine" value="9"></input>
           <input id="plus" type="button" name="plus" value="+"></input>
-          <input id="minus" type="button" name="minus" value="-"></input>
-          <input id="divide" type="button" name="divide" value="/"></input>
-          <input id="multiply" type="button" name="multiply" value="*"></input>
         </div>
 
-        <div id="numbers">
-          <input id="nine" type="button" name="nine" value="9"></input>
-          <input id="eight" type="button" name="eight" value="8"></input>
-          <input id="seven" type="button" name="seven" value="7"></input>
-          <input id="six" type="button" name="six" value="6"></input>
-          <input id="five" type="button" name="five" value="5"></input>
+        <div id="row2">
           <input id="four" type="button" name="four" value="4"></input>
+          <input id="five" type="button" name="five" value="5"></input>
+          <input id="six" type="button" name="six" value="6"></input>
+          <input id="minus" type="button" name="minus" value="-"></input>
+        </div>
+
+        <div id="row3">
           <input id="three" type="button" name="three" value="3"></input>
           <input id="two" type="button" name="two" value="2"></input>
           <input id="one" type="button" name="one" value="1"></input>
+          <input id="multiply" type="button" name="multiply" value="*"></input>
+        </div>
+
+        <div id="row4">
           <input id="zero" type="button" name="zero" value="0"></input>
           <input id="dec" type="button" name="dec" value="."></input>
-        </div>
-
-        <div class="bottom">
           <input id="equals" type="button" name="equals" value="="></input>
+          <input id="divide" type="button" name="divide" value="/"></input>
         </div>
 
+      </div>
 
       </div>
     </main>

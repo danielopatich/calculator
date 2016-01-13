@@ -14,6 +14,12 @@ html {
   box-sizing: border-box;
   font-family: 'myriad'; }
 
+body {
+  background-image: url("https://images.unsplash.com/photo-1450849608880-6f787542c88a?crop=entropy&dpr=2&fit=crop&fm=jpg&h=675&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1300");
+  height: auto;
+  background-position: 80% 51.5555555%;
+  background-repeat: no-repeat; }
+
 main {
   max-width: 68em;
   margin-left: auto;
@@ -24,81 +30,150 @@ main {
     display: table; }
 
 #calculator {
-  display: block;
+  margin-top: 50px;
+  width: 100%;
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 31.76157%;
-  background-color: #66AF59;
-  height: 350px; }
+  width: 48.82117%;
+  margin-left: 25.58941%;
+  border: 20px solid rgba(28, 37, 83, 0.85);
+  height: auto; }
   #calculator:last-child {
     margin-right: 0; }
-  #calculator input {
-    background: #64AC58;
-    border: solid 1px #fff; }
 
-#total {
-  height: 70px;
-  font-size: 20px;
-  border: 1px solid #ccc;
-  appearance: none;
-  box-shadow: none;
-  border-radius: none;
-  border: none;
-  width: 74%;
-  margin: 0 0; }
-
-#clear {
-  height: 70px;
-  font-size: 20px;
-  border: 1px solid #ccc;
-  appearance: none;
-  box-shadow: none;
-  border-radius: none;
-  width: 25%; }
-
-#operators input {
+.top {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 31.76157%;
-  margin-right: 0;
-  height: 70px;
-  display: block;
-  appearance: none;
-  box-shadow: none;
-  border-radius: none;
-  width: 25%;
-  float: right; }
-  #operators input:last-child {
+  width: 100%; }
+  .top:last-child {
     margin-right: 0; }
+  .top input {
+    background: #6A74A2;
+    border: none;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    height: 59px;
+    width: 25.25%;
+    margin-right: -5px;
+    padding: 63px 0; }
+  .top :hover {
+    background: white;
+    transition: all ease 0.5s; }
+  .top #total {
+    background: rgba(180, 94, 84, 0.6);
+    width: 75.1%;
+    padding: 30px;
+    height: auto;
+    font-size: 55px; }
 
-#numbers input {
+#row1 {
   float: left;
   display: block;
-  margin-right: 7.42297%;
-  width: 73.14426%;
-  height: 70px;
-  width: 25%;
-  appearance: none;
-  box-shadow: none;
-  border-radius: none;
-  margin-right: 0; }
-  #numbers input:last-child {
+  margin-right: 2.35765%;
+  width: 100%; }
+  #row1:last-child {
     margin-right: 0; }
+  #row1 input {
+    font-size: 52px;
+    padding: 25px 0;
+    background: rgba(106, 116, 162, 0.9);
+    border: 1px solid;
+    border-bottom: none;
+    height: 80px;
+    width: 25.25%;
+    margin-right: -5px; }
+  #row1 :hover {
+    background: white;
+    transition: all ease 0.5s; }
 
-#equals {
+#row2 {
   float: left;
   display: block;
-  margin-right: 7.42297%;
-  width: 19.43277%;
-  height: 70px;
-  font-size: 20px;
-  float: right;
-  border: 1px solid #ccc;
-  appearance: none;
-  box-shadow: none;
-  border-radius: none;
-  width: 25%; }
-  #equals:last-child {
+  margin-right: 2.35765%;
+  width: 100%; }
+  #row2:last-child {
     margin-right: 0; }
+  #row2 input {
+    font-size: 52px;
+    padding: 25px 0;
+    background: rgba(106, 116, 162, 0.9);
+    border: 1px solid;
+    border-bottom: none;
+    height: 80px;
+    width: 25.25%;
+    margin-right: -5px; }
+  #row2 :hover {
+    background: white;
+    transition: all ease 0.5s; }
+
+#row3 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  #row3:last-child {
+    margin-right: 0; }
+  #row3 input {
+    font-size: 52px;
+    padding: 25px 0;
+    background: rgba(106, 116, 162, 0.9);
+    border: 1px solid;
+    border-bottom: none;
+    height: 80px;
+    width: 25.25%;
+    margin-right: -5px; }
+  #row3 :hover {
+    background: white;
+    transition: all ease 0.5s; }
+
+#row4 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  #row4:last-child {
+    margin-right: 0; }
+  #row4 input {
+    font-size: 52px;
+    padding: 25px 0;
+    background: rgba(106, 116, 162, 0.9);
+    border: 1px solid;
+    height: 80px;
+    width: 25.25%;
+    margin-right: -5px; }
+  #row4 :hover {
+    background: white;
+    transition: all ease 0.5s; }
+
+@media screen and (max-width: 768px) {
+  #calculator {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    margin-left: 0%; }
+    #calculator:last-child {
+      margin-right: 0; } }
+
+#calculator #total {
+  width: 75.1%; }
+
+@media screen and (max-width: 480px) {
+  #calculator {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    margin-left: 0%;
+    margin-top: 0;
+    border: 10px solid rgba(28, 37, 83, 0.85); }
+    #calculator:last-child {
+      margin-right: 0; } }
+
+#calculator input {
+  height: 100px; }
+
+#calculator #total {
+  width: 75%; }

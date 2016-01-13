@@ -2,85 +2,163 @@
 // $visual-grid: true;
 @import "../bower_components/neat/app/assets/stylesheets/neat";
 
+$mobile: new-breakpoint(max-width 480px);
+$between: new-breakpoint(max-width 600px);
+$tablet: new-breakpoint(max-width 768px);
+
 @font-face {
   font-family: 'myriad';
-  src: url(file:///Users/danielopatich1/dev/homework/week2/friday/fonts/myriad.otf); }
-
-* {
-  box-sizing: border-box;
-  font-family: 'myriad';
+  src: url(file:///Users/danielopatich1/dev/homework/week2/friday/fonts/myriad.otf);
 }
 
+  * {
+    box-sizing: border-box;
+    font-family: 'myriad';
+  }
 
-main {
-  @include outer-container;
-}
+  body {
+    background-image: url('https://images.unsplash.com/photo-1450849608880-6f787542c88a?crop=entropy&dpr=2&fit=crop&fm=jpg&h=675&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1300');
+    height: auto;
+    background-position: 80% 51.5555555%;
+    background-repeat: no-repeat;
+  }
 
+
+  main {
+    @include outer-container;
+  }
+
+  #calculator {
+    margin-top: 50px;
+    width: 100%;
+    @include span-columns(6);
+    @include shift(3);
+    border: 20px solid rgba(28, 37, 83, .85);
+    height: auto;
+  }
+
+  .top {
+    @include span-columns(12);
+    input {
+      background: #6A74A2;
+      border: none;
+      border-left: 1px solid;
+      border-right: 1px solid;
+      height: 59px;
+      width: 25.25%;
+      margin-right: -5px;
+      padding: 63px 0;
+    }
+    :hover {
+      background: white;
+      transition: all ease 0.5s;
+    }
+    #total {
+      background: rgba(180, 94, 84, .6);
+      width: 75.1%;
+      padding: 30px;
+      height: auto;
+      font-size: 55px;
+    }
+  }
+
+  #row1 {
+    @include span-columns(12);
+    input {
+      font-size: 52px;
+      padding: 25px 0;
+      background: rgba(106, 116, 162, .9);
+      border: 1px solid;
+      border-bottom: none;
+      height: 80px;
+      width: 25.25%;
+      margin-right: -5px;
+    }
+    :hover {
+      background: white;
+      transition: all ease 0.5s;
+    }
+  }
+
+  #row2 {
+    @include span-columns(12);
+    input {
+      font-size: 52px;
+      padding: 25px 0;
+      background: rgba(106, 116, 162, .9);
+      border: 1px solid;
+      border-bottom: none;
+      height: 80px;
+      width: 25.25%;
+      margin-right: -5px;
+    }
+    :hover {
+      background: white;
+      transition: all ease 0.5s;
+    }
+  }
+
+  #row3 {
+    @include span-columns(12);
+    input {
+      font-size: 52px;
+      padding: 25px 0;
+      background: rgba(106, 116, 162, .9);
+      border: 1px solid;
+      border-bottom: none;
+      height: 80px;
+      width: 25.25%;
+      margin-right: -5px;
+    }
+    :hover {
+      background: white;
+      transition: all ease 0.5s;
+    }
+  }
+
+  #row4 {
+    @include span-columns(12);
+    input {
+      font-size: 52px;
+      padding: 25px 0;
+      background: rgba(106, 116, 162, .9);
+      border: 1px solid;
+      height: 80px;
+      width: 25.25%;
+      margin-right: -5px;
+    }
+    :hover {
+      background: white;
+      transition: all ease 0.5s;
+    }
+  }
+
+
+// TABLET //
 #calculator {
-  display: block;
-  @include span-columns(4);
-  background-color: #66AF59;
-  height: 350px;
-   input {
-     background: #64AC58;
-     border: solid 1px #fff;
-   }
-}
-
-#total {
-  height: 70px;
-  font-size: 20px;
-  border: 1px solid #ccc;
-  appearance: none;
-  box-shadow: none;
-  border-radius: none;
-  border: none;
-  width: 74%;
-  margin: 0 0;
-}
-
-#clear {
-  height: 70px;
-  font-size: 20px;
-  border: 1px solid #ccc;
-  appearance: none;
-  box-shadow: none;
-  border-radius: none;
-  width: 25%;
+  @include media($tablet) {
+    @include span-columns(12 of 12);
+    @include shift(0);
+  }
+  #total {
+    width: 75.1%;
+  }
 }
 
 
-#operators input{
-  @include span-columns(4);
-  @include omega();
-  height: 70px;
-  display: block;
-  appearance: none;
-  box-shadow: none;
-  border-radius: none;
-  width: 25%;
-  float: right;
-}
 
-#numbers input {
-  @include span-columns(3 of 4);
-  height: 70px;
-  width: 25%;
-  appearance: none;
-  box-shadow: none;
-  border-radius: none;
-  margin-right: 0;
-}
-
-
-#equals {
-  @include span-columns(1 of 4);
-  height: 70px;
-  font-size: 20px;
-  float: right;
-  border: 1px solid #ccc;
-  appearance: none;
-  box-shadow: none;
-  border-radius: none;
-  width: 25%;
+// MOBILE //
+#calculator {
+  @include media($mobile) {
+    @include span-columns(12 of 12);
+    @include shift(0);
+    margin-top: 0;
+    border: 10px solid rgba(28, 37, 83, .85);
+  }
+  input {
+    height: 100px;
+  }
+  #total {
+    width: 75%;
+  }
 }
